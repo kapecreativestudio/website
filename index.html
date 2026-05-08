@@ -47,24 +47,24 @@
                 <source src="assets/hero-video.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
-        </div>
-        <div class="hero-content">
-            <div class="hero-content">
-    <div class="hero-logo-wrapper">
-        <svg class="svg-draw-text" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
-            <defs>
-                <filter id="text-stroke">
-                    <feMorphology operator="dilate" radius="1.5" in="SourceAlpha" result="THICKNESS"/>
-                    <feComposite operator="out" in="THICKNESS" in2="SourceGraphic"/>
-                </filter>
-            </defs>
-            <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="60" fill="none" stroke="white" stroke-width="1.5">KAPË</text>
-        </svg>
+<section class="hero" id="hero">
+    <div class="hero-video-container">
+        <video autoplay muted loop playsinline class="hero-video">
+            <source src="assets/hero-video.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
     </div>
     
-    <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
-    <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
-</div>
+    <div class="hero-content">
+        <div class="hero-logo-container fade-in-delay-2">
+            <img src="assets/kape-logo.png" alt="Kapë Production Logo" class="hero-logo-img">
+        </div>
+        
+        <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
+        <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
+    </div>
+</section>
+
             <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
             <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
         </div>
