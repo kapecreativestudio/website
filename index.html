@@ -49,19 +49,22 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <div class="hero-logo-container fade-in-delay-2">
-                <svg class="hero-logo-svg" viewBox="0 0 500 120" width="100%" height="auto">
-                   <div class="hero-logo-container fade-in-delay-2">
-    <img src="assets/hero-logo-img.png" alt="Kapë Production" class="hero-logo-img">
-                    </div>
-                    <defs>
-                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#FFFFFF" />
-                            <stop offset="100%" stop-color="#E2E2E2" />
-                        </linearGradient>
-                    </defs>
-                </svg>
-            </div>
+            <div class="hero-content">
+    <div class="hero-logo-wrapper">
+        <svg class="svg-draw-text" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
+            <defs>
+                <filter id="text-stroke">
+                    <feMorphology operator="dilate" radius="1.5" in="SourceAlpha" result="THICKNESS"/>
+                    <feComposite operator="out" in="THICKNESS" in2="SourceGraphic"/>
+                </filter>
+            </defs>
+            <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="60" fill="none" stroke="white" stroke-width="1.5">KAPË</text>
+        </svg>
+    </div>
+    
+    <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
+    <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
+</div>
             <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
             <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
         </div>
