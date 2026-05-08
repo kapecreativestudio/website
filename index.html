@@ -3,26 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapë Production</title>
+    <title>Kapë Production | Ethiopian Creative Production House</title>
     <meta name="description" content="Kapë Production - Ethiopian creative production company specializing in video production, photography, branding, and design services.">
+    <meta name="keywords" content="video production, photography, branding, Ethiopia, Addis Ababa, creative agency, cinematography">
+    <meta name="author" content="Kapë Production">
+    <meta name="theme-color" content="#D4AF37">
+
+    <!-- Open Graph / Social -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Kapë Production | Ethiopian Creative Production House">
+    <meta property="og:description" content="Transforming Ideas Into Visual Stories. Video production, photography, branding & design.">
+    <meta property="og:image" content="assets/kape-logo.png">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
     <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/kape-logo.png">
+<base target="_blank">
 </head>
 <body>
-    <nav class="navbar" id="navbar">
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
         <div class="nav-container">
-            <a href="#" class="logo">KAPË PRODUCTION</a>
+            <a href="#" class="logo" aria-label="Kapë Production Home">KAPË PRODUCTION</a>
+
             <div class="nav-links" id="navLinks">
                 <a href="#services">Services</a>
                 <a href="#work">Work</a>
                 <a href="#about">About</a>
                 <a href="#team">Team</a>
-                <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
             </div>
-            <button class="hamburger" id="hamburger" aria-label="Menu">
+
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -30,670 +49,300 @@
         </div>
     </nav>
 
-    <div class="mobile-menu" id="mobileMenu">
-        <div class="mobile-menu-links">
-            <a href="#services">Services</a>
-            <a href="#work">Work</a>
-            <a href="#about">About</a>
-            <a href="#team">Team</a>
-            <a href="#faq">FAQ</a>
-            <a href="#contact">Contact</a>
-        </div>
-    </div>
-
-    <section class="hero" id="hero">
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero" id="hero" aria-label="Hero">
         <div class="hero-video-container">
-           <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-poster.jpg">
-    <source src="assets/hero-video.webm" type="video/webm">
+            <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-poster.jpg" aria-hidden="true">
+                <source src="assets/hero-video.webm" type="video/webm">
+                <source src="assets/hero-video.mp4" type="video/mp4">
             </video>
             <div class="hero-overlay"></div>
-<section class="hero" id="hero">
-    <div class="hero-video-container">
-        <video autoplay muted loop playsinline class="hero-video">
-            <source src="assets/hero-video.mp4" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-    </div>
-    
-    <div class="hero-content">
-        <div class="hero-logo-container fade-in-delay-2">
-            <img src="assets/kape-logo.png" alt="Kapë Production Logo" class="hero-logo-img">
         </div>
-        
-        <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
-        <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
-    </div>
-</section>
 
+        <div class="hero-content">
+            <div class="hero-logo-container fade-in-delay-2">
+                <img src="assets/kape-logo.png" alt="Kapë Production Logo" class="hero-logo-img" width="200" height="auto">
+            </div>
             <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
             <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
         </div>
-        <div class="partner-strip">
+
+        <!-- Partner Marquee -->
+        <div class="partner-strip" aria-label="Trusted by">
             <div class="partner-marquee">
-                <span>Absolute Works</span>
-                <span>Azzeman Hotel</span>
-                <span>DoubleTree by Hilton</span>
-                <span>AbriMinds</span>
-                <span>Garalay</span>
-                <span>EB BUGARO</span>
-                <span>Tefillah</span>
                 <span>BGI Ethiopia</span>
-                <span>Kifirt</span>
-                <span>Markab Solutions</span>
-                <span>Darara Law Office</span>
-                <span>AYA Hotel</span>
-                <span>Absolute Works</span>
                 <span>Azzeman Hotel</span>
+                <span>Safaricom</span>
                 <span>DoubleTree by Hilton</span>
-                <span>AbriMinds</span>
-                <span>Garalay</span>
-                <span>EB BUGARO</span>
-                <span>Tefillah</span>
+                <span>Absolute Works</span>
+                <span>Ethiopian Airlines</span>
+                <!-- Duplicate for seamless loop -->
                 <span>BGI Ethiopia</span>
-                <span>Kibirt</span>
-                <span>Markab Solutions</span>
-                <span>Darara Law Office</span>
-                <span>AYA Hotel</span>
+                <span>Azzeman Hotel</span>
+                <span>Safaricom</span>
+                <span>DoubleTree by Hilton</span>
+                <span>Absolute Works</span>
+                <span>Ethiopian Airlines</span>
             </div>
         </div>
     </section>
 
-    <section class="about section-light" id="about">
+    <!-- ===================== ABOUT SECTION ===================== -->
+    <section class="about section-light" id="about" aria-labelledby="about-heading">
         <div class="container about-grid">
             <div class="about-text">
                 <span class="section-label">About Kapë</span>
-                <h2 class="section-heading" data-scroll-reveal>Where Creativity Meets Ethiopian Excellence</h2>
-                <p>Kape is a Geez word which means "House of Paint" or "Inkhorn." At Kape, we are passionate storytellers dedicated to crafting visually stunning, audibly captivating, and emotionally resonant productions that transform ideas into captivating narratives.</p>
-                <p>From commercial campaigns to documentary films, our team brings together diverse talents, directors, cinematographers, editors, and designers committed to pushing the boundaries of visual storytelling. We believe every project is an opportunity to create something extraordinary.</p>
-                <a href="#services" class="text-link">Learn More About Us <span class="arrow">→</span></a>
+                <h2 id="about-heading" class="section-heading" data-scroll-reveal>Where Creativity Meets Excellence</h2>
+                <p><strong>Kapë</strong> is a Geez word which means "House of Paint" or "Inkhorn." We are passionate storytellers dedicated to crafting visually stunning productions that transform ideas into narratives.</p>
+                <p>Based in Addis Ababa, Ethiopia, we bring world-class production value to every project — from commercial films and documentaries to brand identities and photography.</p>
             </div>
             <div class="about-image">
-                <img src="assets/about-img.jpg" alt="Kapë Production film crew on location in Ethiopia">
+                <img src="assets/about-img.jpg" alt="Kapë Production crew on set" loading="lazy" width="600" height="400">
             </div>
         </div>
     </section>
 
-    <section class="mission-vision section-dark" id="mission">
-        <div class="container">
-            <div class="mv-grid">
-                <div class="mv-card">
-                    <span class="section-label">Our Mission</span>
-                    <h2 class="section-heading white" data-scroll-reveal>What Drives Us</h2>
-                    <p>At Kape, our mission is to deliver visually stunning, audibly captivating, and emotionally resonant productions that transform ideas into captivating narratives. We are committed to achieving the highest standards of quality and excellence, ensuring every project is completed on time and within budget.</p>
-                    <p>Together with our exceptional customer service, we strive to exceed our clients' expectations and create memorable experiences that leave a lasting impact.</p>
-                </div>
-                <div class="mv-card">
-                    <span class="section-label">Our Vision</span>
-                    <h2 class="section-heading white" data-scroll-reveal>Where We're Headed</h2>
-                    <p>Our vision at Kape is to be a leading production company known for exceptional creativity, excellence and customer service. We aim to address and improve the current issues within the Ethiopian production industry.</p>
-                    <p>We aspire to set high industry standards so it can elevate us to be a trusted partner, creating memorable content that resonates globally.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="why-kape section-light" id="why-kape">
-        <div class="container">
-            <div class="why-grid">
-                <div class="why-text">
-                    <span class="section-label">Why Kapë</span>
-                    <h2 class="section-heading" data-scroll-reveal>Your Story, Our Craft</h2>
-                    <p>Our commitment to quality and excellence ensures every project meets the highest standards, from concept to final cut. You can say we have a very keen eye for detail. We also pride ourselves on delivering projects on time and within budget, ensuring a seamless and stress free experience for our clients.</p>
-                    <p>We combine technical excellence with creative passion. Every project receives our full attention, from initial concept through to delivery. Our Ethiopian roots give us a unique perspective, while our global standards ensure world-class output.</p>
-                </div>
-                <div class="why-features">
-                    <div class="feature-item">
-                        <span class="feature-num">01</span>
-                        <div class="feature-content">
-                            <h4>End-to-End Production</h4>
-                            <p>From scriptwriting to post-production, we handle every aspect of your project in-house.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-num">02</span>
-                        <div class="feature-content">
-                            <h4>Cultural Authenticity</h4>
-                            <p>Deep understanding of Ethiopian culture and storytelling traditions, blended with global aesthetics.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-num">03</span>
-                        <div class="feature-content">
-                            <h4>Cutting-Edge Technology</h4>
-                            <p>Latest cameras, drones, and editing suites to deliver stunning visual quality.</p>
-                        </div>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-num">04</span>
-                        <div class="feature-content">
-                            <h4>Client-Centric Approach</h4>
-                            <p>We collaborate closely with you, ensuring your vision is realized at every stage.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="values section-dark" id="values">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-label">Our Principles</span>
-                <h2 class="section-heading white" data-scroll-reveal>Core Values</h2>
-                <p class="section-subtitle">The principles that guide every project we undertake</p>
-            </div>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Creativity and Originality</h4>
-                    <p>We foster creativity and originality to produce visually stunning, audibly captivating and emotionally resonant content.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Quality and Excellence</h4>
-                    <p>We are committed to delivering projects of the highest quality and excellence, meeting and exceeding industry standards.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Accountability and Reliability</h4>
-                    <p>We take full accountability for our actions and deliverables, ensuring projects are completed on time and within budget.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Customer Centric</h4>
-                    <p>We actively involve customers in their journey, to seek their needs, preferences, and feedback while providing prompt and personalized customer support.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Privacy and Confidentiality</h4>
-                    <p>We uphold the highest standards of data protection and confidentiality, ensuring all discussions and files remain confidential and are shared only with explicit permission and order.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Integrity and Professionalism</h4>
-                    <p>We operate with integrity and professionalism in all aspects of our work, maintaining honesty, transparency, and ethical conduct.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="services section-dark" id="services">
+    <!-- ===================== SERVICES SECTION ===================== -->
+    <section class="services section-dark" id="services" aria-labelledby="services-heading">
         <div class="container">
             <div class="section-header center">
                 <span class="section-label">What We Do</span>
-                <h2 class="section-heading white" data-scroll-reveal>Our Services</h2>
-                <p class="section-subtitle">Comprehensive production services tailored to bring your vision to life</p>
+                <h2 id="services-heading" class="section-heading white">Our Services</h2>
             </div>
+
             <div class="services-grid main-services">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <!-- Video Production -->
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
+                        </svg>
                     </div>
                     <h3>Video Production</h3>
-                    <p>Commercial films, documentaries, music videos, and corporate content crafted with cinematic precision from concept to final cut.</p>
-                    <ul class="service-list">
-                        <li>Concept development</li>
-                        <li>Filming and cinematography</li>
-                        <li>Video editing</li>
-                        <li>Special effects and animation</li>
-                        <li>Voiceover recording</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"/><path d="M12 5v2M12 17v2M5 12h2M17 12h2"/></svg>
-                    </div>
-                    <h3>Photography</h3>
-                    <p>Editorial, product, event, and portrait photography that captures the essence of your brand with artistic vision.</p>
-                    <ul class="service-list">
-                        <li>Product photography</li>
-                        <li>Wedding photography</li>
-                        <li>Event coverage</li>
-                        <li>Portrait sessions</li>
-                    </ul>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"/></svg>
-                    </div>
-                    <h3>Branding & Design</h3>
-                    <p>Brand strategy, visual identity, graphic design, and motion graphics that communicate your story effectively.</p>
-                    <ul class="service-list">
-                        <li>Brand strategy development</li>
-                        <li>Logo design</li>
-                        <li>Brand identity creation</li>
-                        <li>Brand guidelines development</li>
-                        <li>Brand positioning</li>
-                    </ul>
-                </div>
-                
-                <div class="service-card">
-                    <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
-                            <line x1="2" y1="12" x2="22" y2="12"></line>
-                            <line x1="2" y1="7" x2="22" y2="7"></line>
-                            <line x1="2" y1="2" x2="7" y2="7"></line>
-                            <line x1="7" y1="2" x2="12" y2="7"></line>
-                            <line x1="12" y1="2" x2="17" y2="7"></line>
-                            <line x1="17" y1="2" x2="22" y2="7"></line>
+                    <p>Commercial films, documentaries, and corporate content crafted with cinematic precision.</p>
+                </article>
+
+                <!-- Post-Production & VFX -->
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <line x1="2" y1="7" x2="22" y2="7"/>
+                            <line x1="7" y1="2" x2="12" y2="7"/>
                         </svg>
                     </div>
                     <h3>Post-Production & VFX</h3>
-                    <p>High-end video editing, surgical color grading, complex visual effects (VFX), and cinematic compositing that bring footage to its peak visual expression.</p>
-                    <ul class="service-list">
-                        <li>High-end narrative & commercial editing</li>
-                        <li>Cinematic color grading & mastering</li>
-                        <li>Visual effects (VFX) & green-screen compositing</li>
-                        <li>Advanced motion graphics & multi-dimensional titles</li>
-                        <li>Post-sound design & dynamic multi-track mixing</li>
-                    </ul>
-                </div>
-            </div>
+                    <p>High-end editing, surgical color grading, and complex visual effects to bring footage to its peak.</p>
+                </article>
 
-            <div class="additional-services">
-                <h3 class="additional-title">Additional Services</h3>
-                <div class="services-grid additional-grid">
-                    <div class="service-card small">
-                        <h4>Commercial Videos</h4>
-                        <p>Television commercials, online advertising videos, radio commercials (audio production)</p>
+                <!-- Photography -->
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="3"/>
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                        </svg>
                     </div>
-                    <div class="service-card small">
-                        <h4>Documentaries</h4>
-                        <p>Short documentaries, feature-length documentaries, corporate documentaries</p>
+                    <h3>Photography</h3>
+                    <p>Editorial, product, and portrait photography that captures the essence of your brand.</p>
+                </article>
+
+                <!-- Branding & Design -->
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343"/>
+                        </svg>
                     </div>
-                    <div class="service-card small">
-                        <h4>Event Videography</h4>
-                        <p>Wedding videos, corporate events, social events, cultural and religious events, fashion shows, charity and fundraising events</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Marketing Videos</h4>
-                        <p>Product/service promotional videos, social media content, explainer videos, viral marketing videos</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Live Streaming</h4>
-                        <p>Live event coverage, webinars and virtual events</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Training & Educational</h4>
-                        <p>Training modules, educational content, e-learning videos</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Corporate Videos</h4>
-                        <p>Company overview videos, employee training videos, internal communication videos, corporate event coverage</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Design Services</h4>
-                        <p>Graphic design, motion graphics, animation, illustration, web design, product packaging design, label design, print design</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Post-Production</h4>
-                        <p>Color grading, sound design and mixing, closed captioning and subtitles</p>
-                    </div>
-                    <div class="service-card small">
-                        <h4>Studio Renting</h4>
-                        <p>Professional-grade equipment, controlled environment for online content creation, product photography, podcast, photo shoot, video production, and professional film/TV productions</p>
-                    </div>
-                </div>
+                    <h3>Branding & Design</h3>
+                    <p>Brand strategy and visual identity that communicate your story effectively.</p>
+                </article>
             </div>
         </div>
     </section>
 
-    <section class="work section-light" id="work">
+    <!-- ===================== WORK / PORTFOLIO SECTION ===================== -->
+    <section class="work section-light" id="work" aria-labelledby="work-heading">
         <div class="container">
-            <div class="section-header">
+            <div class="section-header center">
                 <span class="section-label">Portfolio</span>
-                <h2 class="section-heading" data-scroll-reveal>Selected Work</h2>
-                <p class="section-subtitle dark">A showcase of our recent projects across film, photography, and design</p>
+                <h2 id="work-heading" class="section-heading">Selected Work</h2>
             </div>
+
             <div class="work-grid">
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="assets/work-1.jpg" alt="Ethiopian Airlines commercial film">
-                        <div class="work-overlay"></div>
-                    </div>
-                    <div class="work-info">
-                        <span class="work-category">Commercial Film</span>
-                        <h3>Ethiopian Airlines — Wings of Africa</h3>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="assets/work-2.jpg" alt="Brand campaign photograph">
-                        <div class="work-overlay"></div>
-                    </div>
-                    <div class="work-info">
-                        <span class="work-category">Brand Campaign</span>
-                        <h3>Safaricom — Connected Lives</h3>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="assets/work-3.jpg" alt="Addis Ababa documentary">
-                        <div class="work-overlay"></div>
-                    </div>
-                    <div class="work-info">
+                <figure class="work-item">
+                    <img src="assets/work-1.jpg" alt="Commercial film project" loading="lazy" width="400" height="300">
+                    <figcaption>
+                        <span class="work-category">Commercial</span>
+                        <h4>Brand Campaign 2025</h4>
+                    </figcaption>
+                </figure>
+                <figure class="work-item">
+                    <img src="assets/work-2.jpg" alt="Documentary project" loading="lazy" width="400" height="300">
+                    <figcaption>
                         <span class="work-category">Documentary</span>
-                        <h3>Addis Ababa Nights</h3>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="assets/work-1.jpg" alt="Ethiopian Airlines commercial film">
-                        <div class="work-overlay"></div>
-                    </div>
-                    <div class="work-info">
-                        <span class="work-category">Commercial Film</span>
-                        <h3>Ethiopian Airlines — Wings of Africa</h3>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="assets/work-2.jpg" alt="Brand campaign photograph">
-                        <div class="work-overlay"></div>
-                    </div>
-                    <div class="work-info">
-                        <span class="work-category">Brand Campaign</span>
-                        <h3>Safaricom — Connected Lives</h3>
-                    </div>
-                </div>
-                <div class="work-card">
-                    <div class="work-image">
-                        <img src="assets/work-3.jpg" alt="Addis Ababa documentary">
-                        <div class="work-overlay"></div>
-                    </div>
-                    <div class="work-info">
-                        <span class="work-category">Documentary</span>
-                        <h3>Addis Ababa Nights</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="center-cta">
-                <a href="#contact" class="btn-outline">View All Projects</a>
+                        <h4>Voices of Ethiopia</h4>
+                    </figcaption>
+                </figure>
+                <figure class="work-item">
+                    <img src="assets/work-3.jpg" alt="Brand identity project" loading="lazy" width="400" height="300">
+                    <figcaption>
+                        <span class="work-category">Branding</span>
+                        <h4>Corporate Rebrand</h4>
+                    </figcaption>
+                </figure>
+                <figure class="work-item">
+                    <img src="assets/work-4.jpg" alt="Photography project" loading="lazy" width="400" height="300">
+                    <figcaption>
+                        <span class="work-category">Photography</span>
+                        <h4>Editorial Series</h4>
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </section>
 
-    <section class="team section-light" id="team">
+    <!-- ===================== TEAM SECTION ===================== -->
+    <section class="team section-light" id="team" aria-labelledby="team-heading">
         <div class="container">
             <div class="section-header team-header">
                 <div>
                     <span class="section-label">Team</span>
-                    <h2 class="section-heading" data-scroll-reveal>Meet the Crew</h2>
+                    <h2 id="team-heading" class="section-heading" data-scroll-reveal>Meet the Crew</h2>
                 </div>
             </div>
-            
-            <div class="team-carousel" id="teamCarousel">
+
+            <div class="team-carousel" id="teamCarousel" role="region" aria-label="Team members carousel">
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="assets/team-1.jpg" alt="Amdetsion Abel - Executive Producer">
+                        <img src="assets/team-1.jpg" alt="Amdetsion Abel - Executive Producer" loading="lazy" width="300" height="350">
                     </div>
                     <h4>Amdetsion Abel</h4>
                     <span class="team-role">Executive Producer</span>
-                    <p>Leading production operations with strategic vision and ensuring every project exceeds client expectations.</p>
                 </div>
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="assets/team-2.jpg" alt="Helina Abdisa - Social Media Marketer and Production Manager">
+                        <img src="assets/team-2.jpg" alt="Helina Abdisa - Production Manager" loading="lazy" width="300" height="350">
                     </div>
                     <h4>Helina Abdisa</h4>
-                    <span class="team-role">Social Media Marketer & Production Manager</span>
-                    <p>Driving brand presence across digital platforms while managing seamless production workflows.</p>
+                    <span class="team-role">Production Manager</span>
                 </div>
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="assets/team-3.jpg" alt="Niyan Ali - Creative & Technical Director">
+                        <img src="assets/team-3.jpg" alt="Niyan Ali - Creative Director" loading="lazy" width="300" height="350">
                     </div>
                     <h4>Niyan Ali</h4>
-                    <span class="team-role">Creative & Technical Director</span>
-                    <p>Bridging creative vision with technical excellence to deliver innovative production solutions.</p>
+                    <span class="team-role">Creative Director</span>
                 </div>
                 <div class="team-card">
                     <div class="team-image">
-                        <img src="assets/team-4.jpg" alt="Bereket Desta - Cinematographer & Video Editor">
+                        <img src="assets/team-4.jpg" alt="Bereket Desta - Cinematographer" loading="lazy" width="300" height="350">
                     </div>
                     <h4>Bereket Desta</h4>
-                    <span class="team-role">Cinematographer & Video Editor</span>
-                    <p>Capturing stunning visuals and crafting compelling narratives through expert cinematography and editing.</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/team-5.jpg" alt="Wibamlak Teni - Camera Operator & Video Editor">
-                    </div>
-                    <h4>Wibamlak Teni</h4>
-                    <span class="team-role">Camera Operator & Video Editor</span>
-                    <p>Operating cameras with precision and editing footage to create visually captivating content.</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-image placeholder-team">
-                        <div class="placeholder-avatar">A</div>
-                    </div>
-                    <h4>Abenezer Afwork</h4>
-                    <span class="team-role">Gimbal Operator & Video Editor</span>
-                    <p>Creating smooth, dynamic shots with gimbal expertise and bringing stories to life in the edit room.</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-image placeholder-team">
-                        <div class="placeholder-avatar">A</div>
-                    </div>
-                    <h4>Amanuel Tewodros</h4>
-                    <span class="team-role">Photographer & Photo Editor</span>
-                    <p>Capturing moments with artistic vision and enhancing images to perfection through expert editing.</p>
-                </div>
-                <div class="team-card">
-                    <div class="team-image placeholder-team">
-                        <div class="placeholder-avatar">E</div>
-                    </div>
-                    <h4>Estifanos Yisehak</h4>
-                    <span class="team-role">Sound Dept. & Photo Editor</span>
-                    <p>Crafting immersive audio experiences and perfecting visuals through meticulous sound and photo editing.</p>
+                    <span class="team-role">Cinematographer</span>
                 </div>
             </div>
 
             <div class="team-nav">
-                <button class="team-arrow" id="teamPrev" aria-label="Previous team member">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                </button>
-                <button class="team-arrow" id="teamNext" aria-label="Next team member">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-                </button>
+                <button class="team-arrow" id="teamPrev" aria-label="Previous team member">←</button>
+                <button class="team-arrow" id="teamNext" aria-label="Next team member">→</button>
             </div>
         </div>
     </section>
 
-    <section class="clients section-dark" id="clients">
+    <!-- ===================== CONTACT SECTION ===================== -->
+    <section class="contact section-dark" id="contact" aria-labelledby="contact-heading">
         <div class="container">
             <div class="section-header center">
-                <span class="section-label">Partners</span>
-                <h2 class="section-heading white" data-scroll-reveal>Some of Our Clients</h2>
+                <span class="section-label">Get in Touch</span>
+                <h2 id="contact-heading" class="section-heading white">Let's Create Together</h2>
             </div>
-            <div class="clients-grid">
-                <div class="client-logo">Absolute Works</div>
-                <div class="client-logo">Azzeman Hotel</div>
-                <div class="client-logo">DoubleTree by Hilton</div>
-                <div class="client-logo">AbdiMinds</div>
-                <div class="client-logo">Garalay</div>
-                <div class="client-logo">EB BUGARO</div>
-                <div class="client-logo">Tefillah</div>
-                <div class="client-logo">BGI Ethiopia</div>
-                <div class="client-logo">Kifirt</div>
-                <div class="client-logo">Markab Solutions</div>
-                <div class="client-logo">Darara Law Office</div>
-                <div class="client-logo">AYA Hotel</div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <a href="mailto:sales@kapeproduction.com">sales@kapeproduction.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <a href="tel:+251983313233">+251 983-31-32-33</a>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <address>Wello Sefer, KASMA Bldg 7th Floor<br>Addis Ababa, Ethiopia</address>
+                    </div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST" aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <select id="service" name="service">
+                            <option value="">Select a service</option>
+                            <option value="video">Video Production</option>
+                            <option value="post">Post-Production & VFX</option>
+                            <option value="photo">Photography</option>
+                            <option value="branding">Branding & Design</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
             </div>
         </div>
     </section>
 
-    <section class="faq section-dark" id="faq">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-label">FAQ</span>
-                <h2 class="section-heading white" data-scroll-reveal>Questions? Answered.</h2>
-                <p class="section-subtitle">Everything you need to know about working with Kapë Production.</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq1">
-                        <span>What services does Kapë Production offer?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq1">
-                        <p>We offer comprehensive video production, photography, branding & design, and post-production services. This includes commercial films, documentaries, music videos, corporate content, editorial photography, brand identity, motion graphics, color grading, sound design, and advanced editing suites. We also provide studio rental services with professional-grade equipment.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq2">
-                        <span>How does the production process work?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq2">
-                        <p>We begin with a discovery session to understand your vision, followed by pre-production planning, filming, and post-production. You'll be involved at every stage with regular updates and review points.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq3">
-                        <span>What is the typical turnaround time?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq3">
-                        <p>Project timelines vary based on scope. A commercial project typically takes 4–6 weeks from concept to delivery. We'll provide a detailed timeline during our initial consultation.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq4">
-                        <span>Do you work with international clients?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq4">
-                        <p>Absolutely. While we're based in Ethiopia, we regularly collaborate with international brands and agencies. Our team is experienced in managing remote productions and cross-cultural projects.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq5">
-                        <span>What equipment do you use?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq5">
-                        <p>We use industry-leading equipment including ARRI and RED cameras, professional cinema lenses, DJI drones, and a full post-production suite with DaVinci Resolve and Adobe Creative Cloud.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question" aria-expanded="false" aria-controls="faq6">
-                        <span>How can I get started?</span>
-                        <span class="faq-icon">+</span>
-                    </button>
-                    <div class="faq-answer" id="faq6">
-                        <p>Simply reach out through our contact form or email us directly at sales@kapeproduction.com. We'll schedule a free consultation to discuss your project needs and provide a custom quote.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-banner" id="contact">
-        <div class="cta-bg">
-            <img src="assets/cta-bg.jpg" alt="Ethiopian highlands at dusk">
-            <div class="cta-overlay"></div>
-        </div>
-        <div class="cta-content">
-            <h2>Ready to Create Something Extraordinary?</h2>
-            <p>Let's discuss your next project and bring your vision to life.</p>
-            <div class="contact-info">
-                <p><strong>Address:</strong> Wello Sefer, KASMA Bldg 7th Floor, in front of Wengelawit Bldg</p>
-                <p><strong>Email:</strong> <a href="mailto:sales@kapeproduction.com">sales@kapeproduction.com</a></p>
-                <p><strong>Phone:</strong> <a href="tel:+251983313233">+251 983-31-32-33</a></p>
-            </div>
-            <a href="mailto:sales@kapeproduction.com" class="hero-cta">Get In Touch</a>
-        </div>
-    </section>
-
-    <footer class="footer">
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
+                <div class="footer-col footer-brand">
                     <h3 class="footer-logo">KAPË PRODUCTION</h3>
-                    <p class="footer-tagline">Ethiopian creative production company transforming ideas into visual stories.</p>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-                        </a>
-                        <a href="#" aria-label="YouTube">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.13c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.46z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg>
-                        </a>
-                        <a href="#" aria-label="LinkedIn">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                        </a>
-                        <a href="#" aria-label="Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
-                        </a>
-                    </div>
+                    <p>Transforming Ideas Into Visual Stories</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Pages</h4>
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#hero">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#work">Work</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-col">
-                    <h4>Services</h4>
-                    <ul>
-                        <li><a href="#services">Video Production</a></li>
-                        <li><a href="#services">Photography</a></li>
-                        <li><a href="#services">Branding</a></li>
-                        <li><a href="#services">Post-Production</a></li>
-                        <li><a href="#services">Studio Rental</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#team">Team</a></li>
                     </ul>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <ul>
-                        <li>Wello Sefer, KASMA Bldg 7th Floor</li>
-                        <li>in front of Wengelawit Bldg</li>
-                        <li><a href="mailto:sales@kapeproduction.com">sales@kapeproduction.com</a></li>
-                        <li><a href="tel:+251983313233">+251 983-31-32-33</a></li>
-                    </ul>
+                    <p><a href="mailto:sales@kapeproduction.com">sales@kapeproduction.com</a></p>
+                    <p><a href="tel:+251983313233">+251 983-31-32-33</a></p>
+                    <address>Wello Sefer, Addis Ababa, Ethiopia</address>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
+                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
+                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2025 Kapë Production. All rights reserved.</p>
-                <div class="footer-links">
-                    <a href="#">Privacy Policy</a>
-                    <span>|</span>
-                    <a href="#">Terms of Service</a>
-                </div>
             </div>
         </div>
     </footer>
 
-    <div class="support-btn" id="supportBtn" title="Contact Support">
-        <div class="support-pulse"></div>
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/>
-        </svg>
-    </div>
-
-    <div class="support-modal" id="supportModal">
-        <div class="support-modal-content">
-            <button class="support-close" id="supportClose" aria-label="Close">&times;</button>
-            <h3>How can we help?</h3>
-            <p>Get in touch with us for any inquiries or project discussions.</p>
-            <div class="support-options">
-                <a href="mailto:sales@kapeproduction.com" class="support-option">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-                    <span>Email Us</span>
-                </a>
-                <a href="tel:+251983313233" class="support-option">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                    <span>Call Us</span>
-                </a>
-            </div>
-        </div>
-    </div>
-
+    <!-- ===================== SCRIPTS ===================== -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
