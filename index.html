@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapë Production | Transforming Ideas Into Visual Stories</title>
+    <title>Kapë Production</title>
     <meta name="description" content="Kapë Production - Ethiopian creative production company specializing in video production, photography, branding, and design services.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="#" class="logo">KAPË PRODUCTION</a>
@@ -31,7 +30,6 @@
         </div>
     </nav>
 
-    <!-- Mobile Menu Overlay -->
     <div class="mobile-menu" id="mobileMenu">
         <div class="mobile-menu-links">
             <a href="#services">Services</a>
@@ -43,7 +41,6 @@
         </div>
     </div>
 
-    <!-- Section 1: Hero -->
     <section class="hero" id="hero">
         <div class="hero-video-container">
             <video autoplay muted loop playsinline class="hero-video">
@@ -52,42 +49,43 @@
             <div class="hero-overlay"></div>
         </div>
         <div class="hero-content">
-            <svg class="svg-draw-text" viewBox="0 0 300 100" preserveAspectRatio="xMidYMid meet">
-                <defs>
-                    <filter id="text-stroke">
-                        <feMorphology operator="dilate" radius="1.5" in="SourceAlpha" result="THICKNESS"/>
-                        <feComposite operator="out" in="THICKNESS" in2="SourceGraphic"/>
-                    </filter>
-                </defs>
-
-            </svg>
+            <div class="hero-logo-container fade-in-delay-2">
+                <svg class="hero-logo-svg" viewBox="0 0 500 120" width="100%" height="auto">
+                    <text x="50%" y="70%" dominant-baseline="middle" text-anchor="middle" font-family="'Bebas Neue', sans-serif" font-size="100" fill="url(#goldGrad)" letter-spacing="14">KAPË</text>
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#FFFFFF" />
+                            <stop offset="100%" stop-color="#E2E2E2" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
             <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
             <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
         </div>
         <div class="partner-strip">
             <div class="partner-marquee">
-                <span>Afrosolix Works</span>
+                <span>Absolute Works</span>
                 <span>Azzeman Hotel</span>
                 <span>DoubleTree by Hilton</span>
-                <span>AbdiMinds</span>
+                <span>AbriMinds</span>
                 <span>Garalay</span>
-                <span>Eubabro</span>
+                <span>EB BUGARO</span>
                 <span>Tefillah</span>
                 <span>BGI Ethiopia</span>
                 <span>Kifirt</span>
                 <span>Markab Solutions</span>
                 <span>Darara Law Office</span>
                 <span>AYA Hotel</span>
-                <!-- Duplicate for seamless loop -->
-                <span>Afrosolix Works</span>
+                <span>Absolute Works</span>
                 <span>Azzeman Hotel</span>
                 <span>DoubleTree by Hilton</span>
-                <span>AbdiMinds</span>
+                <span>AbriMinds</span>
                 <span>Garalay</span>
-                <span>Eubabro</span>
+                <span>EB BUGARO</span>
                 <span>Tefillah</span>
                 <span>BGI Ethiopia</span>
-                <span>Kifirt</span>
+                <span>Kibirt</span>
                 <span>Markab Solutions</span>
                 <span>Darara Law Office</span>
                 <span>AYA Hotel</span>
@@ -95,8 +93,6 @@
         </div>
     </section>
 
-
-    <!-- Section 3: About -->
     <section class="about section-light" id="about">
         <div class="container about-grid">
             <div class="about-text">
@@ -112,7 +108,6 @@
         </div>
     </section>
 
-    <!-- Section 4: Mission & Vision -->
     <section class="mission-vision section-dark" id="mission">
         <div class="container">
             <div class="mv-grid">
@@ -132,7 +127,6 @@
         </div>
     </section>
 
-    <!-- Section 5: Why Kapë -->
     <section class="why-kape section-light" id="why-kape">
         <div class="container">
             <div class="why-grid">
@@ -176,7 +170,6 @@
         </div>
     </section>
 
-    <!-- Section 6: Core Values -->
     <section class="values section-dark" id="values">
         <div class="container">
             <div class="section-header center">
@@ -215,26 +208,10 @@
                     <h4>Integrity and Professionalism</h4>
                     <p>We operate with integrity and professionalism in all aspects of our work, maintaining honesty, transparency, and ethical conduct.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Social Responsibilities</h4>
-                    <p>We recognize our social responsibility and strive to make a positive impact on our society and we fully respect the diverse cultures, religions, and values of our people.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Social Responsibilities</h4>
-                    <p>We recognize our social responsibility and strive to make a positive impact on our society and we fully respect the diverse cultures, religions, and values of our people.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">✦</div>
-                    <h4>Social Responsibilities</h4>
-                    <p>We recognize our social responsibility and strive to make a positive impact on our society and we fully respect the diverse cultures, religions, and values of our people.</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- Section 7: Services -->
     <section class="services section-dark" id="services">
         <div class="container">
             <div class="section-header center">
@@ -284,22 +261,31 @@
                         <li>Brand positioning</li>
                     </ul>
                 </div>
+                
                 <div class="service-card">
                     <div class="service-icon">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"/></svg>
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <line x1="2" y1="7" x2="22" y2="7"></line>
+                            <line x1="2" y1="2" x2="7" y2="7"></line>
+                            <line x1="7" y1="2" x2="12" y2="7"></line>
+                            <line x1="12" y1="2" x2="17" y2="7"></line>
+                            <line x1="17" y1="2" x2="22" y2="7"></line>
+                        </svg>
                     </div>
-                    <h3>Audio Production</h3>
-                    <p>Original music composition, sound design, voice-over recording, and post-production audio mixing.</p>
+                    <h3>Post-Production & VFX</h3>
+                    <p>High-end video editing, surgical color grading, complex visual effects (VFX), and cinematic compositing that bring footage to its peak visual expression.</p>
                     <ul class="service-list">
-                        <li>Original music composition</li>
-                        <li>Sound design and mixing</li>
-                        <li>Voice-over recording</li>
-                        <li>Audio post-production</li>
+                        <li>High-end narrative & commercial editing</li>
+                        <li>Cinematic color grading & mastering</li>
+                        <li>Visual effects (VFX) & green-screen compositing</li>
+                        <li>Advanced motion graphics & multi-dimensional titles</li>
+                        <li>Post-sound design & dynamic multi-track mixing</li>
                     </ul>
                 </div>
             </div>
 
-            <!-- Additional Services -->
             <div class="additional-services">
                 <h3 class="additional-title">Additional Services</h3>
                 <div class="services-grid additional-grid">
@@ -348,7 +334,6 @@
         </div>
     </section>
 
-    <!-- Section 8: Selected Work -->
     <section class="work section-light" id="work">
         <div class="container">
             <div class="section-header">
@@ -387,7 +372,7 @@
                         <h3>Addis Ababa Nights</h3>
                     </div>
                 </div>
-                                <div class="work-card">
+                <div class="work-card">
                     <div class="work-image">
                         <img src="assets/work-1.jpg" alt="Ethiopian Airlines commercial film">
                         <div class="work-overlay"></div>
@@ -417,7 +402,6 @@
                         <h3>Addis Ababa Nights</h3>
                     </div>
                 </div>
-                
             </div>
             <div class="center-cta">
                 <a href="#contact" class="btn-outline">View All Projects</a>
@@ -425,7 +409,6 @@
         </div>
     </section>
 
-    <!-- Section 9: Team -->
     <section class="team section-light" id="team">
         <div class="container">
             <div class="section-header team-header">
@@ -433,15 +416,8 @@
                     <span class="section-label">Team</span>
                     <h2 class="section-heading" data-scroll-reveal>Meet the Crew</h2>
                 </div>
-                <div class="team-nav">
-                    <button class="team-arrow" id="teamPrev" aria-label="Previous team member">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
-                    </button>
-                    <button class="team-arrow" id="teamNext" aria-label="Next team member">
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
-                    </button>
-                </div>
             </div>
+            
             <div class="team-carousel" id="teamCarousel">
                 <div class="team-card">
                     <div class="team-image">
@@ -508,10 +484,18 @@
                     <p>Crafting immersive audio experiences and perfecting visuals through meticulous sound and photo editing.</p>
                 </div>
             </div>
+
+            <div class="team-nav">
+                <button class="team-arrow" id="teamPrev" aria-label="Previous team member">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+                </button>
+                <button class="team-arrow" id="teamNext" aria-label="Next team member">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+                </button>
+            </div>
         </div>
     </section>
 
-    <!-- Section 10: Clients -->
     <section class="clients section-dark" id="clients">
         <div class="container">
             <div class="section-header center">
@@ -519,12 +503,12 @@
                 <h2 class="section-heading white" data-scroll-reveal>Some of Our Clients</h2>
             </div>
             <div class="clients-grid">
-                <div class="client-logo">Afrosolix Works</div>
+                <div class="client-logo">Absolute Works</div>
                 <div class="client-logo">Azzeman Hotel</div>
                 <div class="client-logo">DoubleTree by Hilton</div>
                 <div class="client-logo">AbdiMinds</div>
                 <div class="client-logo">Garalay</div>
-                <div class="client-logo">Eubabro</div>
+                <div class="client-logo">EB BUGARO</div>
                 <div class="client-logo">Tefillah</div>
                 <div class="client-logo">BGI Ethiopia</div>
                 <div class="client-logo">Kifirt</div>
@@ -535,7 +519,6 @@
         </div>
     </section>
 
-    <!-- Section 11: FAQ -->
     <section class="faq section-dark" id="faq">
         <div class="container">
             <div class="section-header center">
@@ -550,7 +533,7 @@
                         <span class="faq-icon">+</span>
                     </button>
                     <div class="faq-answer" id="faq1">
-                        <p>We offer comprehensive video production, photography, branding & design, and audio production services. This includes commercial films, documentaries, music videos, corporate content, editorial photography, brand identity, motion graphics, original music, and sound design. We also provide studio rental services with professional-grade equipment.</p>
+                        <p>We offer comprehensive video production, photography, branding & design, and post-production services. This includes commercial films, documentaries, music videos, corporate content, editorial photography, brand identity, motion graphics, color grading, sound design, and advanced editing suites. We also provide studio rental services with professional-grade equipment.</p>
                     </div>
                 </div>
                 <div class="faq-item">
@@ -602,7 +585,6 @@
         </div>
     </section>
 
-    <!-- Section 12: CTA Banner -->
     <section class="cta-banner" id="contact">
         <div class="cta-bg">
             <img src="assets/cta-bg.jpg" alt="Ethiopian highlands at dusk">
@@ -620,7 +602,6 @@
         </div>
     </section>
 
-    <!-- Section 13: Footer -->
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -658,7 +639,7 @@
                         <li><a href="#services">Video Production</a></li>
                         <li><a href="#services">Photography</a></li>
                         <li><a href="#services">Branding</a></li>
-                        <li><a href="#services">Audio Production</a></li>
+                        <li><a href="#services">Post-Production</a></li>
                         <li><a href="#services">Studio Rental</a></li>
                     </ul>
                 </div>
@@ -683,7 +664,6 @@
         </div>
     </footer>
 
-    <!-- Floating Support Button -->
     <div class="support-btn" id="supportBtn" title="Contact Support">
         <div class="support-pulse"></div>
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -691,7 +671,6 @@
         </svg>
     </div>
 
-    <!-- Support Modal -->
     <div class="support-modal" id="supportModal">
         <div class="support-modal-content">
             <button class="support-close" id="supportClose" aria-label="Close">&times;</button>
