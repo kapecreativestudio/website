@@ -3,348 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapë Production | Ethiopian Creative Production House</title>
-    <meta name="description" content="Kapë Production - Ethiopian creative production company specializing in video production, photography, branding, and design services.">
-    <meta name="keywords" content="video production, photography, branding, Ethiopia, Addis Ababa, creative agency, cinematography">
-    <meta name="author" content="Kapë Production">
-    <meta name="theme-color" content="#D4AF37">
-
-    <!-- Open Graph / Social -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Kapë Production | Ethiopian Creative Production House">
-    <meta property="og:description" content="Transforming Ideas Into Visual Stories. Video production, photography, branding & design.">
-    <meta property="og:image" content="assets/kape-logo.png">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
+    <title>KAPË PRODUCTION | Leading the Evolution of Content</title>
     <link rel="stylesheet" href="style.css">
-
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/kape-logo.png">
-<base target="_blank">
+    <link href="https://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
 </head>
-<body>
-    <!-- ===================== NAVIGATION ===================== -->
-    <nav class="navbar" id="navbar" role="navigation" aria-label="Main Navigation">
-        <div class="nav-container">
-            <a href="#" class="logo" aria-label="Kapë Production Home">KAPË PRODUCTION</a>
+<body class="is-loading">
+    <!-- Sea Star Inspired Custom Cursor -->
+    <div class="cursor"></div>
 
-            <div class="nav-links" id="navLinks">
-                <a href="#services">Services</a>
-                <a href="#work">Work</a>
-                <a href="#about">About</a>
-                <a href="#team">Team</a>
-                <a href="#contact">Contact</a>
-            </div>
+    <!-- Background Layer -->
+    <div class="background-canvas">
+        <div class="grain"></div>
+    </div>
 
-            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+    <!-- Sea Star Minimalist Nav -->
+    <nav class="seastar-nav">
+        <div class="nav-brand">
+            <span class="vertical-logo">K<br>A<br>P<br>Ë</span>
+        </div>
+        <div class="nav-links">
+            <a href="#services" data-scroll-to>SERVICES</a>
+            <a href="#about" data-scroll-to>ABOUT</a>
+            <a href="#crew" data-scroll-to>CREW</a>
+            <a href="#contact" class="btn-touch">GET IN TOUCH</a>
         </div>
     </nav>
 
-    <!-- ===================== HERO SECTION ===================== -->
-    <section class="hero" id="hero" aria-label="Hero">
-        <div class="hero-video-container">
-            <video autoplay muted loop playsinline class="hero-video" poster="assets/hero-poster.jpg" aria-hidden="true">
-                <source src="assets/hero-video.webm" type="video/webm">
-                <source src="assets/hero-video.mp4" type="video/mp4">
-            </video>
-            <div class="hero-overlay"></div>
+    <!-- Support Agent Widget -->
+    <div class="support-agent">
+        <div class="agent-bubble">
+            <span class="icon">?</span>
         </div>
-
-        <div class="hero-content">
-            <div class="hero-logo-container fade-in-delay-2">
-                <img src="assets/kape-logo.png" alt="Kapë Production Logo" class="hero-logo-img" width="200" height="auto">
+        <div class="agent-panel">
+            <div class="panel-header">
+                <h3>Kapë Support</h3>
+                <button class="close-panel">×</button>
             </div>
-            <p class="hero-tagline fade-in-delay">Transforming Ideas Into Visual Stories</p>
-            <a href="#work" class="hero-cta fade-in-delay-2">Our Work</a>
-        </div>
-
-        <!-- Partner Marquee -->
-        <div class="partner-strip" aria-label="Trusted by">
-            <div class="partner-marquee">
-                <span>BGI Ethiopia</span>
-                <span>Azzeman Hotel</span>
-                <span>Safaricom</span>
-                <span>DoubleTree by Hilton</span>
-                <span>Absolute Works</span>
-                <span>Ethiopian Airlines</span>
-                <!-- Duplicate for seamless loop -->
-                <span>BGI Ethiopia</span>
-                <span>Azzeman Hotel</span>
-                <span>Safaricom</span>
-                <span>DoubleTree by Hilton</span>
-                <span>Absolute Works</span>
-                <span>Ethiopian Airlines</span>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== ABOUT SECTION ===================== -->
-    <section class="about section-light" id="about" aria-labelledby="about-heading">
-        <div class="container about-grid">
-            <div class="about-text">
-                <span class="section-label">About Kapë</span>
-                <h2 id="about-heading" class="section-heading" data-scroll-reveal>Where Creativity Meets Excellence</h2>
-                <p><strong>Kapë</strong> is a Geez word which means "House of Paint" or "Inkhorn." We are passionate storytellers dedicated to crafting visually stunning productions that transform ideas into narratives.</p>
-                <p>Based in Addis Ababa, Ethiopia, we bring world-class production value to every project — from commercial films and documentaries to brand identities and photography.</p>
-            </div>
-            <div class="about-image">
-                <img src="assets/about-img.jpg" alt="Kapë Production crew on set" loading="lazy" width="600" height="400">
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== SERVICES SECTION ===================== -->
-    <section class="services section-dark" id="services" aria-labelledby="services-heading">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-label">What We Do</span>
-                <h2 id="services-heading" class="section-heading white">Our Services</h2>
-            </div>
-
-            <div class="services-grid main-services">
-                <!-- Video Production -->
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/>
-                        </svg>
-                    </div>
-                    <h3>Video Production</h3>
-                    <p>Commercial films, documentaries, and corporate content crafted with cinematic precision.</p>
-                </article>
-
-                <!-- Post-Production & VFX -->
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <rect x="2" y="2" width="20" height="20" rx="2.18"/>
-                            <line x1="2" y1="12" x2="22" y2="12"/>
-                            <line x1="2" y1="7" x2="22" y2="7"/>
-                            <line x1="7" y1="2" x2="12" y2="7"/>
-                        </svg>
-                    </div>
-                    <h3>Post-Production & VFX</h3>
-                    <p>High-end editing, surgical color grading, and complex visual effects to bring footage to its peak.</p>
-                </article>
-
-                <!-- Photography -->
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="3"/>
-                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
-                        </svg>
-                    </div>
-                    <h3>Photography</h3>
-                    <p>Editorial, product, and portrait photography that captures the essence of your brand.</p>
-                </article>
-
-                <!-- Branding & Design -->
-                <article class="service-card">
-                    <div class="service-icon" aria-hidden="true">
-                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                            <path d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343"/>
-                        </svg>
-                    </div>
-                    <h3>Branding & Design</h3>
-                    <p>Brand strategy and visual identity that communicate your story effectively.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== WORK / PORTFOLIO SECTION ===================== -->
-    <section class="work section-light" id="work" aria-labelledby="work-heading">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-label">Portfolio</span>
-                <h2 id="work-heading" class="section-heading">Selected Work</h2>
-            </div>
-
-            <div class="work-grid">
-                <figure class="work-item">
-                    <img src="assets/work-1.jpg" alt="Commercial film project" loading="lazy" width="400" height="300">
-                    <figcaption>
-                        <span class="work-category">Commercial</span>
-                        <h4>Brand Campaign 2025</h4>
-                    </figcaption>
-                </figure>
-                <figure class="work-item">
-                    <img src="assets/work-2.jpg" alt="Documentary project" loading="lazy" width="400" height="300">
-                    <figcaption>
-                        <span class="work-category">Documentary</span>
-                        <h4>Voices of Ethiopia</h4>
-                    </figcaption>
-                </figure>
-                <figure class="work-item">
-                    <img src="assets/work-3.jpg" alt="Brand identity project" loading="lazy" width="400" height="300">
-                    <figcaption>
-                        <span class="work-category">Branding</span>
-                        <h4>Corporate Rebrand</h4>
-                    </figcaption>
-                </figure>
-                <figure class="work-item">
-                    <img src="assets/work-4.jpg" alt="Photography project" loading="lazy" width="400" height="300">
-                    <figcaption>
-                        <span class="work-category">Photography</span>
-                        <h4>Editorial Series</h4>
-                    </figcaption>
-                </figure>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== TEAM SECTION ===================== -->
-    <section class="team section-light" id="team" aria-labelledby="team-heading">
-        <div class="container">
-            <div class="section-header team-header">
-                <div>
-                    <span class="section-label">Team</span>
-                    <h2 id="team-heading" class="section-heading" data-scroll-reveal>Meet the Crew</h2>
+            <div class="panel-body">
+                <p>Hi! I'm the Kapë Support Agent. How can I assist you today?</p>
+                <div class="quick-links">
+                    <button>Do you have scripts?</button>
+                    <button>Our Camera Gear?</button>
+                    <button>Studio Rates?</button>
                 </div>
             </div>
-
-            <div class="team-carousel" id="teamCarousel" role="region" aria-label="Team members carousel">
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/team-1.jpg" alt="Amdetsion Abel - Executive Producer" loading="lazy" width="300" height="350">
-                    </div>
-                    <h4>Amdetsion Abel</h4>
-                    <span class="team-role">Executive Producer</span>
-                </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/team-2.jpg" alt="Helina Abdisa - Production Manager" loading="lazy" width="300" height="350">
-                    </div>
-                    <h4>Helina Abdisa</h4>
-                    <span class="team-role">Production Manager</span>
-                </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/team-3.jpg" alt="Niyan Ali - Creative Director" loading="lazy" width="300" height="350">
-                    </div>
-                    <h4>Niyan Ali</h4>
-                    <span class="team-role">Creative Director</span>
-                </div>
-                <div class="team-card">
-                    <div class="team-image">
-                        <img src="assets/team-4.jpg" alt="Bereket Desta - Cinematographer" loading="lazy" width="300" height="350">
-                    </div>
-                    <h4>Bereket Desta</h4>
-                    <span class="team-role">Cinematographer</span>
-                </div>
-            </div>
-
-            <div class="team-nav">
-                <button class="team-arrow" id="teamPrev" aria-label="Previous team member">←</button>
-                <button class="team-arrow" id="teamNext" aria-label="Next team member">→</button>
-            </div>
         </div>
-    </section>
+    </div>
 
-    <!-- ===================== CONTACT SECTION ===================== -->
-    <section class="contact section-dark" id="contact" aria-labelledby="contact-heading">
-        <div class="container">
-            <div class="section-header center">
-                <span class="section-label">Get in Touch</span>
-                <h2 id="contact-heading" class="section-heading white">Let's Create Together</h2>
+    <div data-scroll-container>
+        
+        <!-- HERO: Full-Screen Vertical Showreel Style -->
+        <section class="hero-v2" data-scroll-section>
+            <div class="hero-video-bg">
+                <!-- Placeholder for high-end video reel -->
+                <div class="video-overlay"></div>
             </div>
+            <div class="hero-text-v2" data-scroll data-scroll-speed="-4">
+                <h1 class="reveal-text">KAPË<br>PRODUCTION</h1>
+                <p class="reveal-text-sub">Leading the Evolution of Visual Narratives in Ethiopia</p>
+                <a href="#services" class="scroll-down-v2">EXPLORE OUR SERVICES</a>
+            </div>
+        </section>
 
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h4>Email</h4>
-                        <a href="mailto:sales@kapeproduction.com">sales@kapeproduction.com</a>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Phone</h4>
-                        <a href="tel:+251983313233">+251 983-31-32-33</a>
-                    </div>
-                    <div class="contact-item">
-                        <h4>Location</h4>
-                        <address>Wello Sefer, KASMA Bldg 7th Floor<br>Addis Ababa, Ethiopia</address>
+        <!-- SERVICES: Sea Star Split Layouts -->
+        <section class="services-v2" id="services" data-scroll-section>
+            <div class="service-row" data-scroll>
+                <div class="service-media vertical-reel">
+                    <div class="media-box">
+                        <img src="assets/Crew/Niyan Ali - Creative & Technical Director.jpg" alt="Production">
+                        <div class="reel-label">VIDEO PRODUCTION</div>
                     </div>
                 </div>
-
-                <form class="contact-form" action="#" method="POST" aria-label="Contact form">
-                    <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required autocomplete="name">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required autocomplete="email">
-                    </div>
-                    <div class="form-group">
-                        <label for="service">Service Interest</label>
-                        <select id="service" name="service">
-                            <option value="">Select a service</option>
-                            <option value="video">Video Production</option>
-                            <option value="post">Post-Production & VFX</option>
-                            <option value="photo">Photography</option>
-                            <option value="branding">Branding & Design</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Send Message</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- ===================== FOOTER ===================== -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-col footer-brand">
-                    <h3 class="footer-logo">KAPË PRODUCTION</h3>
-                    <p>Transforming Ideas Into Visual Stories</p>
-                </div>
-                <div class="footer-col">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#work">Work</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#team">Team</a></li>
+                <div class="service-info-v2" data-scroll data-scroll-speed="1">
+                    <span class="label-v2">01 / SERVICES</span>
+                    <h2>Vertical & Cinematic<br>Video Production</h2>
+                    <p>Innovative production from concept development to meticulous execution. We specialize in television commercials, documentaries, and high-energy marketing content.</p>
+                    <ul class="seastar-list">
+                        <li>Concept Development</li>
+                        <li>Filming & Cinematography</li>
+                        <li>Special Effects & Animation</li>
+                        <li>Color Grading & Post</li>
                     </ul>
+                </div>
+            </div>
+
+            <div class="service-row reverse" data-scroll>
+                <div class="service-info-v2" data-scroll data-scroll-speed="1">
+                    <span class="label-v2">02 / BRANDING</span>
+                    <h2>Brand Strategy &<br>Identity Creation</h2>
+                    <p>Defining your brand's voice through strategic positioning and premium design. We create identities that resonate globally.</p>
+                    <ul class="seastar-list">
+                        <li>Logo Design</li>
+                        <li>Brand Identity</li>
+                        <li>Motion Graphics</li>
+                        <li>Product Packaging</li>
+                    </ul>
+                </div>
+                <div class="service-media vertical-reel">
+                    <div class="media-box">
+                        <img src="assets/Crew/Bereket Desta - Cinematographer & Video Editor.jpg" alt="Branding">
+                        <div class="reel-label">BRANDING</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CREW: Minimalist Cards -->
+        <section class="crew-v2" id="crew" data-scroll-section>
+            <div class="container-v2">
+                <div class="section-header-v2">
+                    <span class="label-v2">THE TEAM</span>
+                    <h2>Expert Minds Behind the Lens</h2>
+                </div>
+                <div class="crew-grid-v2">
+                    <div class="crew-item-v2" data-scroll data-scroll-speed="0.5">
+                        <div class="crew-img-v2">
+                            <img src="assets/Crew/Niyan Ali - Creative & Technical Director.jpg" alt="Niyan">
+                        </div>
+                        <div class="crew-meta-v2">
+                            <h4>NIYAN ALI</h4>
+                            <span>Creative & Technical Director</span>
+                        </div>
+                    </div>
+                    <!-- Add more crew items similarly -->
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER: Sea Star Minimalist -->
+        <footer class="footer-v2" data-scroll-section>
+            <div class="footer-grid-v2">
+                <div class="footer-col">
+                    <span class="vertical-logo">KAPË</span>
                 </div>
                 <div class="footer-col">
                     <h4>Contact</h4>
-                    <p><a href="mailto:sales@kapeproduction.com">sales@kapeproduction.com</a></p>
-                    <p><a href="tel:+251983313233">+251 983-31-32-33</a></p>
-                    <address>Wello Sefer, Addis Ababa, Ethiopia</address>
+                    <p>sales@kapeproduction.com</p>
+                    <p>+251 983-31-32-33</p>
                 </div>
                 <div class="footer-col">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5"/></svg></a>
-                        <a href="#" aria-label="YouTube"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 00-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 00-1.94 2A29 29 0 001 11.75a29 29 0 00.46 5.33A2.78 2.78 0 003.4 19.1c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 001.94-2 29 29 0 00.46-5.25 29 29 0 00-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/></svg></a>
-                        <a href="#" aria-label="LinkedIn"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
-                    </div>
+                    <h4>Location</h4>
+                    <p>Wello Sefer, KASMA Bldg 7th Floor</p>
+                    <p>Addis Ababa, Ethiopia</p>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2025 Kapë Production. All rights reserved.</p>
+            <div class="footer-bottom-v2">
+                <span>© 2026 KAPË PRODUCTION. ALL RIGHTS RESERVED.</span>
             </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- ===================== SCRIPTS ===================== -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
